@@ -1,0 +1,35 @@
+<h1>{{ viewTitle }}</h1>
+<form action="/student" method="POST" autocomplete="off">
+<input type="hidden" name="_id" value="{{student._id}}">
+    <table>
+        <tr>
+            <td>Full Name</td>
+            <td>
+                <input type="text" name="fullname" placeholder="Enter First Name" value="{{student.fullname}}">
+            </td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td>
+                <input type="text" name="lastname" placeholder="Enter Last Name" value="{{ student.lastname}}">
+            </td>
+        </tr>
+        <tr>
+            <td>Mobile Number</td>
+            <td>
+                <input type="text" name="mobile" placeholder="Enter Mobile Number" value="{{student.mobile}}">
+            </td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td>
+                <input type="text" name="city" placeholder="Enter City" value="{{student.city}}">
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                <input type="submit" name="btnadd" value="Add">
+            </td>
+        </tr>
+    </table>
+</form>
